@@ -8,9 +8,11 @@ img {
   }
 // override for the 'Home' navigation link
 .navbar-brand {
-  font-size: inherit;
+  font-size: 2em;
   }
-
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0;
+}
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -32,9 +34,14 @@ img {
   }
 // apply styles to HTML elements
 // to make views framework-neutral
+html {
+  background-color: #f6f2e9;
+}
+
 main {
   @extend .container;
-  background-color: #eee;
+  background-color: #f6f2e9;
+  color: #6c4316;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
@@ -78,4 +85,9 @@ section {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-xs;
+}
+
+.navbar-default {
+  background-color: #efe6cf;
+  border-color: #ccbe9e;
 }

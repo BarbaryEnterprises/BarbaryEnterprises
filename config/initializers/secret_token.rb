@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-BarbaryEnterprises::Application.config.secret_key_base = 'd57dff61db1831789517fafcf2b7b363def3b9fcc6285e848a753b7e761d72aacc1f998990f50bee196a0fc78d601a87579a52ca9fec81533ee6948689a7b2a1'
+BarbaryEnterprises::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']
